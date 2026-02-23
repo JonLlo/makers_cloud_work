@@ -1,0 +1,1 @@
+Thu 19th Feb: Mocking : core_workshops/modern_software_engineering_foundation/2_golden_square/mocking/excercise/lib/coach.py

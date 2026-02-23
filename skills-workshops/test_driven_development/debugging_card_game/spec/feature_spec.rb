@@ -1,0 +1,20 @@
+require 'game'
+require 'player'
+
+describe 'playing a game' do
+  it 'can play a full game' do
+    p1 = Player.new("Bob")
+    p2 = Player.new("Alice")
+    p3 = Player.new("Charlie")
+    game = Game.new([p1,p2,p3])
+    srand(3)
+    game.shuffle_deck
+    game.deal(4)
+    expect { game.show_player_hands }.to output(<<-output
+Alice: 3♣, 6♣, 9♣, Q♣
+Bob: 4♣, 7♣, 10♣, K♣
+Charlie: 2♣, 5♣, 8♣, J♣
+output
+    ).to_stdout
+  end
+end

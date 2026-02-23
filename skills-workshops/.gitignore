@@ -1,0 +1,8 @@
+.DS_Store
+Gemfile.lock
+node_modules
+**/.pytest_cache/
+**/__pycache__/
+**/*venv*/
+**/.idea
+**/*.iml
